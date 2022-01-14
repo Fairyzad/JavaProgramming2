@@ -15,8 +15,40 @@ public class Square extends Shape {
         }
         this.side = side;
     }
+
     public Square(String name,double side) {
         super(name);
         setSide(side);
     }
+
+    @Override
+    public double area() {
+        return super.area();
+    }
+
+    @Override
+    public double perimeter() {
+        return side * 4;
+    }
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
+
+
 }
+/*
+Square extends Shape:
+	variables:
+		side;
+	Encapsulate the field
+	Add a constructor to set the filed
+	area(): side * side
+	perimeter(): side * 4
+	toString(): side, area, perimeter
+ */
