@@ -28,7 +28,7 @@ public class Shape {
     public double area(){return 0;
 
     }
-    public double primeter(){
+    public double perimeter(){
         return 0;
     }
 
@@ -37,7 +37,7 @@ public class Shape {
         return "Shape{" +
                 "name='" + name + '\'' +
                 ", area='" + area() + '\'' +
-                ", primeter='" + primeter() + '\'' +
+                ", primeter='" + perimeter() + '\'' +
                 '}';
     }
 }

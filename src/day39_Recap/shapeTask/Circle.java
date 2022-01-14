@@ -22,4 +22,29 @@ public class Circle extends Shape {
         super("Circle");
         setRadius(radius);
     }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public double area() {
+        return radius * radius*pi;
+    }
+
+    @Override
+    public double perimeter() {
+        return super.perimeter();
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi='" + pi +  '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
+    }
 }
